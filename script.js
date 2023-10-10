@@ -1,4 +1,3 @@
-console.log('veikia')
 
 const randomArr = ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
 
@@ -80,3 +79,77 @@ const secondArray = randomArr.slice (14,16)
 
 const result2 = firstArray.concat(secondArray)
 console.log(result2)
+
+
+//antra dalis 
+
+const randomArr2 = [4, 5, -5556, 155, 640, '15x', 6789, -5564, 478, 654, 'obuolys', 789, -51, 55, -222, 0, -357, -56, 'trylika', 444, 7778, 4154, 4751]
+console.log(randomArr2)
+randomArr2.length
+console.log(randomArr2.length)
+// Dirbti su šiuo masyvu:
+// [4, 5, -5556, 155, 640, '15x', 6789, -5564, 478, 654, 'obuolys', 789, -51, 55, -222, 0, -357, -56, 'trylika', 444, 7778, 4154, 4751];
+
+// 1. Dirbant su šiuo masyvu eilės tvarka atlikti žemiau pateiktas užduotis. Naudoti metodus: pop, push, shift, unshift, splice.
+// 1.1. Pašalinti pirmą masyvo narį.
+const task11 = randomArr2.shift(0)
+console.log(randomArr2)
+// 1.2. Pašalinti paskutinį masyvo narį.
+const task12 = randomArr2.pop(23)
+console.log(randomArr2)
+// 1.3. Rasti vidurinį masyvo narį ir jį pašalinti.
+const task13 = randomArr2.splice(10,1)
+console.log(randomArr2)
+// 1.4. Pašalinti priešpaskutinį masyvo narį.
+const task14 = randomArr2.splice(18,1)
+console.log(randomArr2)
+// 1.5. Pašalinti antrą masyvo narį.
+const task15 = randomArr2.splice(1,1)
+console.log(randomArr2)
+// 1.6. Pašalinti 7 ir 8 masyvo narius.
+const task16 = randomArr2.splice(4,2)
+console.log(randomArr2)
+// 1.7. Pašalinti 4, 5 ir 6 masyvo narius skaičiuojant nuo galo.
+const task17 = randomArr2.splice(-6,3)
+console.log(randomArr2)
+// 1.8. Pašalinti trečią masyvo narį ir į jo vietą įdėti skaičių 888.
+const task18 = randomArr2.splice(2,1,888)
+console.log(randomArr2)
+// 1.9. Pašalinti dešimtą masyvo narį ir į jo vietą įdėti skaičius: 33, 789 ir 6543.
+const task19 = randomArr2.splice(9,1,33,789,6543)
+console.log(randomArr2)
+// 1.10. Pašalinti paskutinį masyvo narį į jo vietą įdėti skaičius: 321, 654, 987.
+const task110 = randomArr2.splice(14,1,321,654,987)
+console.log(randomArr2)
+// 1.11. Tarp pirmo ir antro masyvo narių įdėti skaičių 11.
+const task111 = randomArr2.splice(1,0,11)
+console.log(randomArr2)
+// 1.12. Tarp 13 ir 14 masyvo narių įdėti skaičių 1.
+const task112 = randomArr2.splice(13,0,1)
+console.log(randomArr2)
+// 1.13. Tarp paskutinio ir priešpaskutinio masyvo narių įdėti skaičių -1.
+const task113 = randomArr2.splice(-1,0,-1)
+console.log(randomArr2)
+// 1.14. Į masyvo pradžią pridėti skaičius: 1, 2, 3.
+const task114 = randomArr2.unshift(1,2,3)
+console.log(randomArr2)
+// 1.15. Į masyvo pabaigą pridėti skaičius: -333, -321, -312.
+const task115 = randomArr2.push(-333,-321, -312)
+console.log(randomArr2)
+// 1.16. Į masyvo vidurį pridėti skaičių 0.
+const task116 = randomArr2.splice(13,0,0)
+console.log(randomArr2)
+// 1.17. Pašalinti pirmą masyvo narį.
+const task117 = randomArr2.splice(0,1)
+console.log(randomArr2)
+// 1.18. Pašalinti paskutinį masyvo narį.
+const task118 = randomArr2.splice(25,1)
+console.log(randomArr2)
+// 1.19. Į masyvo pradžią pridėti žodį "start".
+const task119 = randomArr2.unshift('start')
+console.log(randomArr2)
+// 1.20. Į masyvo pabaigą pridėti žodį "end".
+const task120 = randomArr2.push('end')
+console.log(randomArr2)
+// Atlikus šias užduotis eilės tvarka masyvas turėtų atrodyti taip:
+// ['start', 2, 3, 5, 11, 155, 888, '15x', 6789, -5564, 'obuolys', -51, 55, 0, 33, 789, 6543, 1, 'trylika', 444, 321, 654, -1, 987, -333, -321, 'end']
